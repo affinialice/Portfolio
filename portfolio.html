@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <script src="portfolio.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="callingcard.html">Calling Card</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="portfolio">
+        <p>A little {array} of the projects I've worked on during the last years. Click to dive deeper!</p>
+        <div class="project-container">
+                <div class="project">
+                    <img src="project1.png" class="project-image" onclick="openSlider(1)">
+                    <p class="project-title">Mobile Application Development</p>
+                </div>
+                <div class="project">
+                    <img src="project2.png" class="project-image" onclick="openSlider(2)">
+                    <p class="project-title">Database Design</p>
+                </div>
+                <div class="project">
+                    <img src="project3.png" class="project-image" onclick="openSlider(3)">
+                    <p class="project-title">Advanced Project Management</p>
+                </div>
+                <div class="project">
+                    <img src="project4.png" class="project-image" onclick="openSlider(4)">
+                    <p class="project-title">Augmented & Virtual Reality</p>
+                </div>
+                <div class="project">
+                    <img src="project5.png" class="project-image" onclick="openSlider(5)">
+                    <p class="project-title">QGIS</p>
+                </div>
+                <div class="project">
+                    <img src="project6.png" class="project-image" onclick="openSlider(6)">
+                    <p class="project-title">Thesis | NFTs in Cultural Sector</p>
+                </div>
+                <div class="project">
+                    <img src="project7.png" class="project-image" onclick="openSlider(7)">
+                    <p class="project-title">ArcGIS</p>
+                </div>
+                <div class="project">
+                    <img src="project8.jpg" class="project-image" onclick="openSlider(8)">
+                    <p class="project-title">Security Token | Blockchain & Digital Assets</p>
+                </div>
+        </div>
+    </div>
+    <div id="slider" class="slider">
+        <span class="close" onclick="closeSlider()">&times;</span>
+        <div class="slider-content">
+            <div class="image-wrapper"></div>
+        </div>
+        <a href="#" id="slider-prev">Previous</a>
+        <a href="#" id="slider-next">Next</a>
+    </div>
+</body>
+</html>        
