@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+
 :root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
@@ -16,13 +16,13 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables end */
+
 
 html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
+
 * {
   margin: 0;
   padding: 0;
@@ -103,7 +103,7 @@ body{
   background:var(--bg-color);
 }
 
-/* THE MAINCONTAINER HOLDS EVERYTHING */
+
 .maincontainer{
     position: absolute;
     width: 600px;
@@ -116,7 +116,7 @@ body{
 
 }
 
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
+
 .thecard{
     position: relative;
     top: 0;
@@ -128,12 +128,12 @@ body{
     transition: all 0.8s ease;
 }
 
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
 .thecard:hover{
     transform: rotateY(180deg);
 }
 
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+
 .thefront{
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ body{
     overflow: hidden;
 }
 
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+
 .theback{
     position: absolute;
     top: 0;

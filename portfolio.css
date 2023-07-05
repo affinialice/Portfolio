@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+
 :root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
@@ -16,13 +16,13 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables end */
+
 
 html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
+
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +92,7 @@ a {
   color: #18201a;
 }
 p{
-  font-style: italic;
+  font-style: var(--bold-font);
 }
 
 .project-container {
@@ -104,8 +104,8 @@ p{
 }
 
 .project {
-  position: relative; /*posiziona i bottoni rispetto imm*/
-  margin: 10px;
+  position: relative; 
+  margin: 50px;
   text-align: center;
   color: 26220;
   font-weight: bold;
@@ -115,8 +115,8 @@ p{
   width: 500px;
   height: 300px;
   cursor: pointer;
-  object-fit: cover; /*mantiene aspetto proporzionale imm*/
-  filter: drop-shadow(10px 10px 10px #c3a6a0);
+  object-fit: cover;
+  filter: drop-shadow(10px 10px 10px #a17a69);
 }
 
 .project-title {
@@ -139,7 +139,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /*posiziona i bottoni rispetto imm*/
+  position: relative;
 }
 .slide {
   display: none;
